@@ -1,0 +1,19 @@
+parola = input("Inserisci una parola: ")
+L_parola = len(parola)
+
+N_vocali = 0
+sottolineatura = ""
+    
+print()
+print("La parola " + parola + " è lunga " + str(L_parola) + " lettere")
+
+for c in parola:
+    if c in "aeiouyAEIOUY":
+        N_vocali += 1
+        sottolineatura += "*"
+    else: 
+        sottolineatura += " "
+
+print("La parola " + parola + " è composta da " + str(N_vocali) + " vocali.")
+print(parola)
+print(sottolineatura)
