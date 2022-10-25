@@ -1,9 +1,0 @@
-stringa1 = input("inserisci stringa1: ")
-stringa2 = input("inserisci stringa2: ")
-
-i1 = 0
-
-while i1 < len(stringa1):
-    i2 = 0
-    while i2 < len(stringa2) and stringa1[i1+i2] == stringa2[i2]:
-        i2 += 1
