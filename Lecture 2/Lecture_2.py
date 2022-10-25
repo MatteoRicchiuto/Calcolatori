@@ -1,4 +1,4 @@
-# In[Slicing]
+# In[] Slicing
 x = input("inserisci una stringa: ")
 
 x0 = x[1:4] # le lettere dalla 1 alla 4
