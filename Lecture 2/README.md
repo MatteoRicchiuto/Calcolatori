@@ -1,8 +1,9 @@
+Argomenti: Slicing, Break
+
 Index:
-      
        Lecture_2:
-                 Slicing 
+                 Esempi di Slicing 
 
 
       Exercise_2:
-                 Stringa In Stringa usando lo slicing
+                 Stringa In Stringa usando lo slicing + break

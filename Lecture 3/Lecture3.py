@@ -1,5 +1,4 @@
 # In[] Funzioni
-
 '''
 # hanno sempre le parentesi, dento la parentesi può esserci uno o più argomento
 # print type int float str len ...
@@ -22,9 +21,10 @@ print(t.time()) #è come se avessimo scritto time.time
 
 # In[] Creare la propria funzione
 
-def ricerca_sottostringa(s1, s2):  #creazione di una funzione
-#s1 e s2 sono ...
+def ricerca_sottostringa(s1, s2):  # Creazione di una funzione
+                                   # s1 e s2 Parametri formali
     i, trovato = 0, False
+    
     while i <= len(s1)-len(s2):
         if s1[i:len(s2) + i] == s2:
             trovato = True
@@ -38,5 +38,63 @@ def ricerca_sottostringa(s1, s2):  #creazione di una funzione
 a = input("inserisci stringa1: ")
 b = input("inserisci stringa2: ")
 
-ricerca_sottostringa(a, b)
-# %%
+ricerca_sottostringa(a, b)           # Invocazione della funzione
+# In[] Return
+# Return associa comme risultato un valore alla funzione 
+# Return termina la funzione (tipo break)
+
+def ricerca_sottostringa(x, y):
+    p, trovato = 0, False
+    while p <= len(x)-len(y) and not trovato: 
+        if y == x[p:p+len(y)]:
+            trovato = True
+            break  
+        p += 1
+        
+    if not trovato:
+        return -1  # Esce dalla funzione
+    else:
+        return p   # Esce dalla funzione
+
+        
+        
+a = input("inserisci stringa1: ")
+b = input("inserisci stringa2: ")
+
+k = ricerca_sottostringa(a, b)    
+fkt < 0:
+    print('KO')
+else:
+    print('OK')  
+
+# In[] Fattoriale Generalizzato
+
+def fattoriale_generalizzato(a, b):
+    m, p = 1, a
+    
+    while p <= b:
+        m *= p # m = m*p
+        p += 1
+        
+    return m
+
+# In[] Fattoriale Generalizzato Con Range
+
+def fattoriale_generalizzato(a, b):
+    m = 1
+    
+    for p in range(a, b+1):
+        m *= p
+        
+    return m
+
+# In[varianti Range]
+
+for n in range(10):
+    print(n)
+    
+for n in range(10, 20, 2):
+    print(n)
+    
+for n in range(20, 10, -1):
+    print(n)

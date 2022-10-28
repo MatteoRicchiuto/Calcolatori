@@ -16,14 +16,25 @@ n 2
 
 def lettera_pp (s1, s2):
 
-    lettera = 0
-    numero = 0
+    lettera = "n"
+    numero1 = 0
+    numero2 = 0
 
     for c in s1:
         if c in s2:
             for d in s2:
-                if c = d:
-                    numero =+ 1
-            
+                if c == d:
+                    numero1 =+ 1
+                if numero2 > numero1:
+                    numero1 = numero2
+                    lettera = c
+    print(lettera)
+    print(numero1)
+
+a = "giovanni"
+b = "cannibbale"
+
+lettera_pp(a, b)
+
 
 
