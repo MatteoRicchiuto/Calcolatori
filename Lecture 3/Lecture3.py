@@ -88,13 +88,13 @@ def fattoriale_generalizzato(a, b):
         
     return m
 
-# In[varianti Range]
+# In[Varianti Range]
 
-for n in range(10):
+for n in range(10): # da 0 a 10 salendo di 1 es: 0, 1, 2, 3, 4, 5, 6
     print(n)
     
-for n in range(10, 20, 2):
+for n in range(10, 20, 2): # da 10 a 20 salendo di 2 es: 10, 12, 14, 16, 18, 20
     print(n)
     
-for n in range(20, 10, -1):
+for n in range(20, 10, -1): # da 20 a 10 scendendo di 1 es: 20, 19, 18, 17, ...
     print(n)

@@ -6,28 +6,27 @@ Esercizio per casa:
 
 def lettera_pp (s1, s2):
 
-    lettera = "*"
-    numero_test = 0
-    numero_mem = 0
+    c_max = None
+    n_max = 0
+    n_test = 0
 
-
-    for c in s1:
-        numero_test = 0
-        if c in s2:
-            for d in s2:
-                if c == d:
-                    numero_test += 1
-                if numero_test > numero_mem:
-                    numero_mem = numero_test
-                    lettera = c
+    for c1 in s1:
+        n_test = 0
+        if c1 in s2:
+            for c2 in s2:
+                if c1 == c2:
+                    n_test += 1
+            if n_test > n_max:
+                n_max = n_test
+                c_max = c1
     
-    if lettera == "*":
-        print("Nessun carattere di " + s1 + " si ripetecazzo in " + s2 + ".")
+    if c_max == None:
+        print(f"Nessun carattere di {s1} si ripete in {s2}.")
     else:
-        if numero_mem > 1:
-            print("Il carattere di " + s1 + " che compare più volte in " + s2 + " è " + lettera + ", si ripete " + str(numero_mem) + " volte.")
+        if n_max > 1:
+            print(f"Il carattere di {s1} che si ripete più volte in {s2} è {c_max}, si ripete {str(n_max)} volte.")  # Stringa formattata è possibile aggiungere variabli alle stringe mettendole tra parentesi graffe
         else:
-            print("Il carattere di " + s1 + " che compare più volte in " + s2 + " è " + lettera + ", si ripete " + str(numero_mem) + " volta.")
+            print("Il carattere di " + s1 + " che compare più volte in " + s2 + " è " + c_max + ", si ripete " + str(n_max) + " volta.")
 
 
 
