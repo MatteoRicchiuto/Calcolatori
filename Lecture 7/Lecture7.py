@@ -18,7 +18,7 @@ print("Il tuo nome è \"matteo\" e hai 19 anni.")
 # In[] Andare a capo in un print
 print("Il tuo nome è matteo n\ Hai 19 anni.") 
 
-# In[] Valore di defoult di un default
+# In[] Valore di default
 
 def radice_quadrata(x, esp=0.01) # Se esp non viene dichiarato, verra preso come valore di default o.o1
     
