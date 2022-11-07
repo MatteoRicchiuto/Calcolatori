@@ -7,5 +7,6 @@ Index:
                  - i parametri della funzione print.
 
       Exercise_7:
-                 Scrivere una funzione che prende in input due stringhe e restituisce il carattere della prima stringa che compare più volte nella seconda. 
-                 Ad esempio se la prima stringa è ciao e la seconda è ramarro marrone, la funzione deve restituire a.
+                 Esercizio per casa:
+                     Scrivere una funzione che riceva in input un intero `n` e
+                     restituisca un `float` (pseudo)-casuale compreso tra 0 ed 1 composto da `n` cifre decimali dopo la virgola. 

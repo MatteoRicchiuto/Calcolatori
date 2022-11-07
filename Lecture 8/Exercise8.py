@@ -1,5 +1,5 @@
+# In[] Esercizio per casa
 '''
-Esercizio per casa:
      Dati 3 segmenti adiacenti ed n float si vuole calcolare quanti degli n float ricadono in ogni segmento. 
      I segmenti sono rappresentati da 2 float h0 e h1 che definiscono i segmenti: (-∞, h0), [h0, h1), [h1, ∞]. 
      Si progetti una funzione che prenda in input la descrizione di 3 segmenti (h0 e h1) e un numero variabile di float e restituisca 
@@ -70,3 +70,39 @@ def hist(h0, h1, *numbers):
     
 
 hist(-7, 5, -7, 5, 3, 10, -4, 5, -12, 6, 0)
+
+
+# In[] Esercizzio in classe: stampa verticale
+def print_v( *strings ):
+    '''
+    Input: un numero variabile di stringhe
+    Stampa le stringhe in verticale, uno di fianco l'altra
+    Restituisce: None
+    
+    Esempio print_v('ciao', 'python')
+    
+    cp
+    iy
+    at
+    oh
+     o
+     n
+    '''    
+    
+    r = 0 # numero di riga
+    terminato = False
+    while not terminato:
+        terminato = True
+        # definiamo la riga r
+        riga_r = ''
+        for a in strings:
+            if len(a) > r:
+                riga_r += a[r]
+                terminato = False
+            else:
+                riga_r += ' '
+        if not terminato:
+            print(riga_r)
+        r += 1
+        
+print_v('ciao', 'python', 'programmazione', 'java', 'c++')

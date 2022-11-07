@@ -1,39 +1,50 @@
-# In[] Stringe formattate 
-
-name = "Matteo"
-age = "19"
-
-print("Il tuo nome è " + name + "e hai " + str(age) + "anni.")
-print(f"Il tuo nome è {name} e hai {str(age)} anni.")  
-# Stringa formattata è possibile aggiungere variabli alle stringe mettendole tra parentesi graffe
-# più breve ed immediata da scrivere
-
-# In[] \ prima del carattere 
-'''
-Come aggiungere caratteri come ", ', / che normalente non possono essre scritti in stringhe.
-'''
-print("Il tuo nome è \"matteo\" e hai 19 anni.") 
-# Scrivere \ prima del carattere 
-
-# In[] Andare a capo in un print
-print("Il tuo nome è matteo n\ Hai 19 anni.") 
-
-# In[] Valore di default
-
-def radice_quadrata(x, esp=0.01) # Se esp non viene dichiarato, verra preso come valore di default o.o1
+# In[] Docstring e return multipli
+def massima_intersezione( x, y ):
+    '''
+    Input: x ed y sono due stringhe
+    Output: restituire il carattere in x che è il più frequente in y e la
+        sua frequenza
+    '''
+    n_max, c_max = 0, None # unpacking
+    for c in x:
+        # conta il numero di volte in cui c compare in y
+        n_c = 0
+        for c_y in y:
+            if c_y == c:
+                n_c += 1
+        if n_c > n_max:
+            n_max, c_max = n_c, c
+    return c_max, n_max
     
-    g = x/2
+a, b = 'ciao', 'ramarro marrone'
+c, n = massima_intersezione( a, b ) # unpacking
+print(c, n)
+    
+# In[] Funzioni con numero variabile di argomenti
 
-    while abs(g * g - x) > esp: # esp aprossimazione della radice
-                                # abs il risultato è sempre positivo, abs(-20) = 20 
-        g = 0.5 * (g + x / g)
+def f( *args ):
+    for a in args:
+        print(a)
+        
+f('ciao', 9, 'python', 3.14, True)
+
+# In[] Astrazione e modularità
+
+def radice_quadrata( x, eps=0.01 ):
+    # prima ipotesi
+    g = x/2
+    
+    while abs( g*g - x ) > eps: # questo e' un ciclo
+        g = 0.5 * ( g + x/g )
 
     return g
 
-print(radice_quadrata(20, 0.0000001))  # esp dichiarato = 0.0000001
-print(radice_quadrata(20))             # esp NON dichiarato = 0.01
+# attenzione se si modifica una implementazione di una funzione, per garantire
+# la compatibilià l'interfaccia non deve essere mutata
 
-''' Scrivere valore parametri formali dichiarandole'''
+def radice_quadrata(x, eps=10):
+    return x**0.5
 
-print(radice_quadrata(esp=0.0000001, x=20  ))  # Molto utile per funzioni con molte variabili
-# %%
+print(radice_quadrata(20, 0.000001))
+print(radice_quadrata(20))
+print(radice_quadrata(eps=0.000001, x = 90))

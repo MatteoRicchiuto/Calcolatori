@@ -36,6 +36,3 @@ b = input("Inserisci la seconda parola: ")
 
 
 lettera_pp(a, b)
-
-
-
