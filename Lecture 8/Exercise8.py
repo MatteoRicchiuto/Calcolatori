@@ -1,4 +1,40 @@
-# In[] Esercizio per casa
+# In[] Esercizzio in classe: stampa verticale
+def print_v( *strings ):
+    '''
+    Input: un numero variabile di stringhe
+    Stampa le stringhe in verticale, uno di fianco l'altra
+    Restituisce: None
+    
+    Esempio print_v('ciao', 'python')
+    
+    cp
+    iy
+    at
+    oh
+     o
+     n
+    '''    
+    
+    r = 0 # numero di riga
+    terminato = False
+    while not terminato:
+        terminato = True
+        # definiamo la riga r
+        riga_r = ''
+        for a in strings:
+            if len(a) > r:
+                riga_r += a[r]
+                terminato = False
+            else:
+                riga_r += ' '
+        if not terminato:
+            print(riga_r)
+        r += 1
+        
+print_v('ciao', 'python', 'programmazione', 'java', 'c++')
+
+
+# In[] Esercizio per casa: Quantità di numeri in determinati insiemi
 '''
      Dati 3 segmenti adiacenti ed n float si vuole calcolare quanti degli n float ricadono in ogni segmento. 
      I segmenti sono rappresentati da 2 float h0 e h1 che definiscono i segmenti: (-∞, h0), [h0, h1), [h1, ∞]. 
@@ -71,38 +107,14 @@ def hist(h0, h1, *numbers):
 
 hist(-7, 5, -7, 5, 3, 10, -4, 5, -12, 6, 0)
 
-
-# In[] Esercizzio in classe: stampa verticale
-def print_v( *strings ):
-    '''
-    Input: un numero variabile di stringhe
-    Stampa le stringhe in verticale, uno di fianco l'altra
-    Restituisce: None
-    
-    Esempio print_v('ciao', 'python')
-    
-    cp
-    iy
-    at
-    oh
-     o
-     n
-    '''    
-    
-    r = 0 # numero di riga
-    terminato = False
-    while not terminato:
-        terminato = True
-        # definiamo la riga r
-        riga_r = ''
-        for a in strings:
-            if len(a) > r:
-                riga_r += a[r]
-                terminato = False
-            else:
-                riga_r += ' '
-        if not terminato:
-            print(riga_r)
-        r += 1
-        
-print_v('ciao', 'python', 'programmazione', 'java', 'c++')
+# In[] versione del prof
+def hist(h0, h1, *numbers):
+    seg0, seg1, seg2 = 0, 0, 0
+    for x in numbers:
+        if x < h0:
+            seg0 += 1
+        elif x < h1:
+            seg1 += 1
+        else:
+            seg2 += 1
+    return seg0, seg1, seg2
