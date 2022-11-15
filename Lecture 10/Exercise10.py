@@ -48,29 +48,3 @@ def init_tuple():
         
     return(tupla)
 init_tuple(10)
-
-
-# In[] Esercizio per casa
-
-def init_tuple(n, v=None):
-    if v == None:
-        return (0, )*n
-    t = ()
-    for i in range(n):
-        # concateno (v(i), ) a t
-        t += (v(i), )
-    return t
-
-# In[] Seconda versione
-
-def init_tuple(n, v = lambda x: 0 ):
-    t = ()
-    for i in range(n):
-        # concateno (v(i), ) a t
-        t += (v(i), ) # richiede i+2 operazioni
-    return t
-
-t0 = init_tuple(10, str)
-print(t0)
-t1 = init_tuple(10)
-print(t1)

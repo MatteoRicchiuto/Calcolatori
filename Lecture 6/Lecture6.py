@@ -13,7 +13,7 @@ print(random.randint(10, 20)) #numero a caso tra intervallo dato
 
 from math import cos #importa una sola funzone da un libreria 
 
-from math import cos, sin # è possibili importare più funzioni insieme
+from math import cos, sin # è possibile importare più funzioni insieme
 
 import time as t # importa una libreia ma cambia nome
 
