@@ -4,7 +4,7 @@ Index:
                  - Caratteri speciali.
                  - Ambienti delle funzioni e visibilità delle variabili.
                  - Parametri delle funzioni con valori di default.
-                 - i parametri della funzione print.
+                 - I parametri della funzione print.
 
       Exercise_7:
                  Esercizio per casa:

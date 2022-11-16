@@ -8,9 +8,9 @@ Index:
                         - Unpacking.
                         - Immutabilità.
                 - Funzioni come input di altre funzioni. 
-                -Funzioni lambda. 
-                -Espressioni condizionali. 
-                -Cenni sui metodi.
+                - Funzioni lambda. 
+                - Espressioni condizionali. 
+                - Cenni sui metodi.
 
       Exercise_9:
               Homework:

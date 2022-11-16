@@ -74,3 +74,11 @@ t0 = init_tuple(10, str)
 print(t0)
 t1 = init_tuple(10)
 print(t1)
+
+
+# In[] Esercizio  Espressione ondizionale
+k = True
+
+print("hello") if k == True else print("ciao")
+
+# %%

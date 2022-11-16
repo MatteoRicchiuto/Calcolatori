@@ -32,9 +32,3 @@ print(b) # a = 10,10,5,5
 print(a) # c = 10,casa,5,5
 print(c) # a = 10,casa,5,5
 
-
-# In[]
-a = [10,10,5,5]
-a[2] = 3
-print(a)
-# %%

@@ -3,7 +3,7 @@ Index:
                  - Docstring.
                  - Output multipli.
                  - Numero variabile di argomenti.
-                 - Uso delle funzione per creare     astrazione e rendere modulare il codice.
+                 - Uso delle funzione per creare astrazione e rendere modulare il codice.
                  - Insidie dell'astrazione.
 
       Exercise_8:

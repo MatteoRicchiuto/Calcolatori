@@ -17,12 +17,12 @@ def massima_intersezione( x, y ):
     return c_max, n_max
     
 a, b = 'ciao', 'ramarro marrone'
-c, n = massima_intersezione( a, b ) # unpacking
+c, n = massima_intersezione( a, b ) # unpacking (associare un valore a ogni variabile nella riga)
 print(c, n)
     
 # In[] Funzioni con numero variabile di argomenti
 
-def f( *args ):
+def f( *args ):  # paking (associare più valori alla stess avariabile)
     for a in args:
         print(a)
         

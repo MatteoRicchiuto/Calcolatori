@@ -38,6 +38,7 @@ def init_tuple(i=0):
         
     return(tupla)
 init_tuple(10)
+
 # In[] Esercizio per casa 3
 def init_tuple():
     tupla = ()

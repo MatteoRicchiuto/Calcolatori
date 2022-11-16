@@ -16,7 +16,7 @@ print("Il tuo nome è \"matteo\" e hai 19 anni.")
 # Scrivere \ prima del carattere 
 
 # In[] Andare a capo in un print
-print("Il tuo nome è matteo n\ Hai 19 anni.") 
+print("Il tuo nome è matteo n\ Hai 19 anni.") # n\
 
 # In[] Valore di default
 
