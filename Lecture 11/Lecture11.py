@@ -19,7 +19,7 @@ print( sum(a))          # Somma di tutti i numeri
     # Questi operatori funzionano soltanto se sono utilizati tra valori comparabili tra di loro
 
 # In[] Aliasing e clonazione liste
-a = [10,10,5,5] ciao
+a = [10,10,5,5]
 
 # clonazione
 b = a[:]
