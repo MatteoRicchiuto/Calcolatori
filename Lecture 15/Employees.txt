@@ -3,10 +3,5 @@ Dwight - Salesman
 Pam - Receptionist
 Michal - Manager
 Oscar - Account
-
-
-
-
-
-
-
+Toby - human Resources
+Kelly - Customer Service

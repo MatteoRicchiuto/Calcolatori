@@ -38,5 +38,9 @@ for employee in employee_file.readlines():  # Ciclo for per stampare tutte le ri
 
 employee_file.close
 
-# In[] Modalita Scrittura
-employee_file = open('Employees.txt', 'r') 
+# In[] Modalita Append
+employee_file = open('Employees.txt', 'a')
+
+employee_file.write("Toby - human Resources")
+
+employee_file.close()
