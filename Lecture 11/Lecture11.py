@@ -7,8 +7,8 @@ print(2 in [4, 2, "ciao"])  # 2 è nella lista?
         # Se falso = False
 
 # In[] Operatori max, min e sum
-
-a = [1,5,4,3,0]    # Funzionano con tuple, liste e stringhe
+#!Liste e tuple
+a = [1,5,4,3,0]   # Funzionano con tuple, liste e stringhe
 b = ["python", "zorro", "casa"] 
 
 print( max(a), max(b))  # Numero più grande o stringa con valore alfabetico maggiore
@@ -21,8 +21,7 @@ print( sum(a))          # Somma di tutti i numeri
 # In[] Aliasing e clonazione liste
 a = [10,10,5,5]
 
-# clonazione
-b = a[:]
+b = a[:]  # clonazione Intera Lista
 
 # Aliacing
 c = a            # = associa un secondo nome alla lista
