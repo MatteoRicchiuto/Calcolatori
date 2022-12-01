@@ -41,6 +41,8 @@ employee_file.close
 # In[] Modalita Append
 employee_file = open('Employees.txt', 'a')
 
-employee_file.write("Toby - human Resources")
+employee_file.write("Toby - human Resources") # Verrà aggiunto alla fine del file
 
 employee_file.close()
+
+# In[] Modalita Scrittura
