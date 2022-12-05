@@ -2,7 +2,7 @@ Index:
        Lecture_10:
               Le liste: 
                   - creazione
-                  - indicizzazione, 
+                  - Indicizzazione, 
                   - Slicing, 
                   - Concatenazione, 
                   - Ripetizione, 

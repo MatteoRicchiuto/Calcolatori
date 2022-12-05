@@ -10,40 +10,55 @@
 '''
 import os
 
-def browse_dir(d, ext=None):
+def browse_dir( d, ext=None ):
     '''
-    imput: d è il nome di una cartella {un str}, ext è una str che indica un' estensione di file.
-    output: stampa tutti i filein de in tutte le sue sottocartelle che terminano in .ext.
-            se ext == None stampa tutti i file
+    Input: d è il nome di una cartella (un str), ext è una str che indica
+        una estensione di file
+    Output: ritorna la lista di tutti i file in d e in tutte le sue sottocartelle che
+        terminanano in .ext. Se ext==None, stampa tutti i file
     '''
-    cartella = (os.listdir(d))
+    
     b = []
+    cartella = os.listdir(d)
 
     for x in cartella:
         full_path = os.path.join(d, x)
-        
         if os.path.isfile(full_path):
-            if ext == None or full_path.split(" ")[-1] == ext:
-                print(f"FILE:{full_path}")
-                
+            if ext == None or x.split('.')[-1] == ext:
+                b.append(full_path)
         elif os.path.isdir(full_path):
-            c = browse_dir(full_path, ext=ext)
-            b.extend(c) #! Equivalente a...
-            
-            #! for x in c:
-                #! b.append()
-        
+            c = browse_dir( full_path, ext=ext )
+            b.extend(c)
+            # equivalente a...
+            #for x in c:
+            #    b.append(x)
     return b
-
-b = browse_dir(os.getcwd(), "py")
+  
+b = browse_dir( os.getcwd(), ext = 'py')
 print(b)
-# In[]
-a = "/Users/matteo/Documents/GitHub/Calcolatori/Lecture 15/Exercise14.py"
 
-f = open(a)
+# In[]Ricerca di file in base al contenuto
 
-for line in f:
-    print(line)
-    
+def browse_dir( d, txt ):
+    b = []
+    cartella = os.listdir(d)
+
+    for x in cartella:
+        full_path = os.path.join(d, x)
+        if os.path.isfile(full_path) and full_path.split('.')[-1] == 'py':
+            f = open(full_path)
+            for line in f:
+                if txt in line:
+                    b.append(full_path)
+                    break
+            f.close()
+        elif os.path.isdir(full_path):
+            c = browse_dir( full_path, txt=txt )
+            b.extend(c)
+    return b
+  
+b = browse_dir( os.getcwd(), 'len' )
+print(b)
+
 
 # %%

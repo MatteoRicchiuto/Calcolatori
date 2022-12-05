@@ -1,21 +1,16 @@
 Index:
-       Lecture_9:
-       Le liste: creazione, indicizzazione, slicing, concatenazione, ripetizione, funzione len, cancellazione, il metodo append. Numero di operazioni elementari richieste dalle precedenti funzionalità.
-                - Tuple: 
-                        - Definizione.
-                        - Indicizzazione. 
-                        - Slicing. 
-                        - Packing. 
-                        - Unpacking.
-                        - Immutabilità.
-                - Funzioni come input di altre funzioni. 
-                -Funzioni lambda. 
-                -Espressioni condizionali. 
-                -Cenni sui metodi.
-
-      Exercise_9:
-              Homework:
-              
-                Si progetti una funzione analoga a init_tuple per le liste.
+       Lecture_14:
+                - Modulo OS:
+                        - os.listdir().
+                        - os.getcwd()one. 
+                        - os.path.isfile(). 
+                        - os.path.isdir(). 
+                        - os.path.join().
+                        -
+                -Esempio, browse_dir:
+                         
+                         una funzione che prende in input il nome di una cartella (un str) e stampa i nomi di tutti i file nella cartella ed in tutte le sue sottocartelle.
                 
-                Si progetti una funzione, denominata rem_none che prenda in input una lista ed elimini da questa tutti gli elementi a valore None.
+
+      Exercise_14:
+              Correzione esercizio per casa lezione 13

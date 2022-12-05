@@ -19,11 +19,14 @@ def hist( a, bins ):
         h[i] += 1       #! numero costantre (dipende da n ovvero da quante volte si ripete il ciclo for)
         
     return h 
+'''
+# Costo computazionale:
+    Il numero di operazioni eseguite è dato dal numero di volte in cui si esegue il
+    ciclo for esterno (m volte) moltiplicato per il costo del blocco (n operazioni
+    nel caso peggiore). In definitiva O(nm).
+'''
 
 print(hist([10,], [0, 10 , 2])) 
-
-#? Qual'è il costo di questa funzione?
-
 
 # %%
 
