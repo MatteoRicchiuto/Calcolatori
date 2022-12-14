@@ -10,7 +10,7 @@ for line in f:              # Esempio: programma che stampa tutte le righe del f
 f.close()                   # E' importante chiudere i file aperti per risparmiare memoria
 
 # In[] Modalità di aperura di un file 
-open('Employees.txt')   #! Non serve dichiarare tutto il percorso sei il file si trova nella stessa cartella in cui si sta lavorando
+open('Employees.txt')        #! Non serve dichiarare tutto il percorso sei il file si trova nella stessa cartella in cui si sta lavorando
 
 open('Employees.txt', 'r')   # Apertura file in modalita di lettura (Metodo non standard)
 open('Employees.txt', 'w')   # Apertura file in modalita di scrittura (Permette di modificare il file)

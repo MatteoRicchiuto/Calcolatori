@@ -31,3 +31,10 @@ print(hist([10,], [0, 10 , 2]))
 # %%
 
 # all' esame ti verra chiesto il costo di una funzione qualsisi
+
+
+
+y = [1,2,3,4,5,6,7,8]
+
+for x in y:         
+    print(x)
