@@ -21,7 +21,7 @@ print( sum(a))          # Somma di tutti i numeri
 # In[] Aliasing e clonazione liste
 a = [10,10,5,5]
 
-b = a[:]  # clonazione Intera Lista
+b = a[:]  # Clonazione Intera Lista
 
 # Aliacing
 c = a            # = associa un secondo nome alla lista
