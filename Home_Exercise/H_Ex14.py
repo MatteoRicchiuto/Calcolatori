@@ -18,4 +18,4 @@ def browse_dir( d ):
         elif os.path.isdir(full_path):
             browse_dir( full_path )
             
-browse_dir( os.getcwd("C:\Users\Matteo\Documents\GitHub\Calcolatori\Home_Exercise") )
+browse_dir( os.getcwd("/Users/matteo/Documents/GitHub/Calcolatori/Home_Exercise") )
