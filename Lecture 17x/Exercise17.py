@@ -22,6 +22,8 @@ t = find_in_file("Exercise 17.py", "lines")
 print(t)
 
 #! COSTO COMPUTAZIONALE
+# O(1) = Costante
+# n = numero righe file 
 # Nel caso peggiore , k in ogni riga, il costo è 0(n^2)   (quadratico)
 
 
@@ -32,14 +34,13 @@ def find_in_file(filename, k):
 	Output: una tupla (r0, r1, ...) di interi che indicano le righe del file in cui compare k  
 	'''
     f = open(filename)
-    lines = []              # 0(1) overo costo costante
+    lines = []              # 0(1) 
     r = 1                   # 0(1) 
 
-    for line in f:          # eseguito 0(n)
+    for line in f:          # Blocco ripetuto 0(n)
         if k in line:       # len(line è) 0(1), 0(1) operazioni
             lines.append(r) # O(1)
-                            #? Visto che lines è una tupla è possibili utilizzare append,
-                            #? Quindi il costo è lineare
+                            #? Visto che lines è una lista è possibili utilizzare append
         r += 1
     
     f.close()               # 0(1)
@@ -51,15 +52,8 @@ print(t)
 
 #! COSTO COMPUTAZIONALE
 # len(line) è 0(1)
-# Nel caso peggiore k in ogni riga, il costo è 0(n)
 #
-# len(line) è 0(m) operazioni 
-# 
-# nel caso peggiore il for richiede 0(m), 0(m) operazioni 
-#
-# Nel caso pggiore il for richiede 0(nm) operazioni
-#
-# Il costo della funzione è 0(nm)
+# Il costo della funzione è 0(n) 
 
 # In[] Correzione Esercizio x Casa
 def find_in_file( filename, k):
@@ -69,7 +63,7 @@ def find_in_file( filename, k):
 		    righe e le colonne del file in cui compare k. Per colonna si intende la posizione
 		    all'interno della riga  
 	'''
-    f = open( filename)
+    f = open(filename)
     lines = []              # 0(1) overo costo costante
     r = 1                   # 0(1) 
 

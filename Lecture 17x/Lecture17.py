@@ -1,3 +1,8 @@
+# In[] Funzione tuple
+t = (1,2,3,4,5)
+l = tuple(t)        # Trasforma una lista in una tupla
+                    # Costo lineare (dipende dalla lunchezza dela tupla)
+
 # In[] Ricerca binaria 
 def bin_search( k, bins ):
     '''
