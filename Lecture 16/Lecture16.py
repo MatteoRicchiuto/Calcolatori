@@ -1,5 +1,6 @@
-# In[] Caklcolo costo computazionale esercizio per casa L15
+# In[] Calcolo costo computazionale 
 
+# esercizio per casa L15
 def hist( a, bins ):
     '''
     Input: a una lista di m float e bins una lista di n-1 floats ordinati in modo crescente

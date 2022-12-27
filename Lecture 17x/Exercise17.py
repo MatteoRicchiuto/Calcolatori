@@ -1,4 +1,4 @@
-# In[] Correzione Esercizio x Casa
+# In[] Correzione Esercizio 1 x Casa
 def find_in_file(filename, k):
     '''
     Input: filename e k sono str, filename è il nome di un file
@@ -27,7 +27,7 @@ print(t)
 # Nel caso peggiore , k in ogni riga, il costo è 0(n^2)   (quadratico)
 
 
-# In[] Correzione Esercizio x Casa V2
+# In[] Correzione Esercizio 1 x Casa V2
 def find_in_file(filename, k):
     '''
     Input: filename e k sono str, filename è il nome di un file
@@ -55,7 +55,7 @@ print(t)
 #
 # Il costo della funzione è 0(n) 
 
-# In[] Correzione Esercizio x Casa
+# In[] Correzione Esercizio 2 x Casa
 def find_in_file( filename, k):
     '''
 	Input: filename e k sono str, filename è il nome di un file
@@ -78,6 +78,6 @@ def find_in_file( filename, k):
     f.close()               # 0(1)
     return tuple(lines)     # nel caso peggiore 0(n)
     
-t = find_in_file("Exercise17.py", "str")
+t = find_in_file("Exercise17.py", "lines")
 print(t)
 # %%

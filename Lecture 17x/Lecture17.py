@@ -34,3 +34,26 @@ def bin_search( k, bins ):
     return cx
 
 print( bin_search(9, [6, 8, 10] ) )
+# In[]
+
+def bin_search(k, bin):
+    n = len(bin)
+
+    lx = 0
+    rx = n
+    trovato = False
+
+    while not trovato:
+        cx = (lx+rx)//2
+        
+        if k > cx:
+            lx = cx
+
+        elif k < cx:
+            rx = cx
+
+        else:
+            return cx
+
+print(bin_search(8,(1,2,3,4,5,6,7,8,9,10)))
+# %%

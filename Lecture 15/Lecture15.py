@@ -1,3 +1,14 @@
+# In[] Funzione Extend 
+list = [1,2,3,4,5]  # Funzione che funziona soltanto con le liste
+
+list2 = [6,7]
+
+list.extend(list2)      # Aggiunge una lista ad un altra lista 
+list.extend([8,9,10])
+
+print(list)
+
+
 # In[] Aperura di un file in un altra Directory (cartella)
 
 a = "/Users/matteo/Documents/GitHub/Calcolatori/Lecture 8/Lecture8.py"
@@ -59,4 +70,5 @@ employee_file = open('Employees_new.txt', 'w')  # Se il file citato non esiste n
 employee_file.write("This is a new file")
 
 employee_file.close()
-# %%
+
+# In[] Extend di una lista 
