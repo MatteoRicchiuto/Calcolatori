@@ -21,8 +21,8 @@ def bin_search( k, bins ):
     trovato = False
     
     while not trovato:
-        cx = (lx+rx)//2
-        # cx è il segmento mediano tra lx e rx
+        cx = (lx+rx)//2             
+                # cx è il segmento mediano tra lx e rx
         if k >= bins[cx-1] and k < bins[cx]:
             trovato = True
         elif  k < bins[cx-1]:
@@ -34,7 +34,7 @@ def bin_search( k, bins ):
     return cx
 
 print( bin_search(9, [6, 8, 10] ) )
-# In[]
+# In[] Ricerca binaria V2
 
 def bin_search(k, bin):
     n = len(bin)

@@ -68,7 +68,7 @@ def find_in_file( filename, k):
     r = 1                   # 0(1) 
 
     for line in f: 
-        for c in range( len(line) - len(k) + 1 ):
+        for c in range( len(line) - len(k) + 1 ): # per evitare errore out of range  
             # verifica se k è il line a partire dalla posizione 
             
             if k == line[c:c+len(k)]:
