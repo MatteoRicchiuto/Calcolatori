@@ -18,7 +18,7 @@ f = open(a)                 # Apertura file in modalita di lettura (Default)
 for line in f:              # Esempio: programma che stampa tutte le righe del file
     print(line)
 
-f.close()                   # E' importante chiudere i file aperti per risparmiare memoria
+f.close()                   # E'importante chiudere i file aperti per risparmiare memoria
 
 # In[] Modalità di aperura di un file 
 open('Employees.txt')        #! Non serve dichiarare tutto il percorso sei il file si trova nella stessa cartella in cui si sta lavorando

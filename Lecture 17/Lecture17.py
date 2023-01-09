@@ -4,6 +4,12 @@ l = tuple(t)        # Trasforma una lista in una tupla
                     # Costo lineare (dipende dalla lunchezza dela tupla)
 
 # In[] Ricerca binaria 
+
+#? L'algoritmo cerca un elemento all'interno di un array che deve necessariamente essere ordinato in ordine crescente
+#? Non usa mai più di ⌈ log 2 ⁡ N ⌉
+#? Impiega sempre lo stesso tempo su uno stesso array per cercare elementi anche in posizioni diverse
+#? Almeno che l'elemento non si trovi al centro dell'array o agli estremi
+
 def bin_search( k, bins ):
     '''
     sia n-1 la lunghezza di bins, ritorna 0 se k < bins[0],
@@ -17,11 +23,11 @@ def bin_search( k, bins ):
     if k >= bins[n-2]:
         return n-1
     
-    lx, rx = 0, n
+    lx, rx = 0, n-1
     trovato = False
     
     while not trovato:
-        cx = (lx+rx)//2             
+        cx = lx+rx//2          
                 # cx è il segmento mediano tra lx e rx
         if k >= bins[cx-1] and k < bins[cx]:
             trovato = True
@@ -33,14 +39,17 @@ def bin_search( k, bins ):
     
     return cx
 
-print( bin_search(9, [6, 8, 10] ) )
+print( bin_search(6, [6, 8, 10] ) )
+#! non funziona con istanze molto piccole
+#! contralla lecture 18, exercise per vedere la soluzione
+
 # In[] Ricerca binaria V2
 
 def bin_search(k, bin):
     n = len(bin)
 
     lx = 0
-    rx = n
+    rx = n-1
     trovato = False
 
     while not trovato:
@@ -50,7 +59,7 @@ def bin_search(k, bin):
             lx = cx
 
         elif k < cx:
-            rx = cx
+            rx = cx 
 
         else:
             return cx
